@@ -1,0 +1,3 @@
+wget "https://archive.ics.uci.edu/ml/machine-learning-databases/00365/Polish_companies_bankruptcy_data.zip"
+open -a "The Unarchiver" Polish_companies_bankruptcy_data.zip
+cd Dane

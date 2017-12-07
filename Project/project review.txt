@@ -1,0 +1,45 @@
+Email to Long, Jesus, and Roger
+
+subject of email: [503 review] Project number 17, Predicting Airline Delays for Flights in California
+
+### Review Begins Project Number: 17
+Project Title: Predicting Airline Delays for Flights in California
+Reviewer Name: Noah Gale
+
+SUMMARY OF PROJECT
+
+The project attempts to classify and understand the causes of airline flight delays using a Bureau of Transportation Statistics dataset.
+The variables for predicting delays are put in three categories: time, carrier, and location.
+Delay time and delay rate are correlated, as well as departure and arrival delays. Then the group explores the relationship between departure delays and locations of the different airports using the OpenFlights database merged with the previous one.
+The report notices that airport size may contribute to delay percentages, with smaller airports with certain types of aircraft having a large number and length of delays. The group then decides to use the main four airports (LAX, SFO, SAN, OAK) as the focus.
+The group also chooses to classify using delay times, not delays as a 0-1 categorical variable.
+They do a simple linear regression for the four main airports but have low R-squared for each result. 
+Then the group tries logistic regression, split into training and test results for each airport. The error rates for the logistic model ranged from 16-22%.
+Then the group used Random Forests to model the delays, and plots the True versus predicted results, noting the general lack of correlation.
+Then the group used Deep Neural Networks, with regression to predict the amount, and classification to predict the category.
+The fits and MSE's of the non-DNN methods are not particularly satisfactory, and the best accuracy rate(77%) is only achieved by classifying all flights as the majority.
+DNN's have the best precision and recall of the models used.
+The group concludes that predicting the overall data will require a hierarchical model, as well as data on weather patterns.
+
+STRENGTH
+Creativity and modeling methods. Various issues with the data were resolved with SMOTE, BoxCox method, and Hadoop Distributed File System.
+
+WEAKNESS
+The explanations of how exactly the group organizes the data and the justifications for the modeling types chosen (DNN, Random Forest, etc.) are a little lacking, as well as the clarity of the writing in the summaries and explanations.
+
+RATINGS
+
+Writing Quality: 4
+Justification: The grammar is a bit confusing, and not always correct. At least one paragraph's writing cuts off completely.
+
+Technical Quality: 4
+Justification: The methods used make sense, but don't feel extensive enough for the flight data.
+The group jumps to different goals in classification with very little warning.
+Figure 9 and the explanations were a little difficult to understand.
+The group also did't consider weather patterns until the very end of the paper. 
+However, when the group experienced issues, they'd find creative ways to get around them. 
+Training set imbalances in logistic regressions and Random Forest were fixed with SMOTE, and unproductive results prompted the group to change tactics to other models.
+
+
+Overall: 4
+With a little bit of proofreading, and some better structure of the analysis, this could be a great paper.
